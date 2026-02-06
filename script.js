@@ -1,18 +1,24 @@
-const noBtn = document.getElementById("noBtn");
-const yesBtn = document.getElementById("yesBtn");
+document.addEventListener("DOMContentLoaded", () => {
+  const noBtn = document.getElementById("noBtn");
+  const yesBtn = document.getElementById("yesBtn");
 
-noBtn.style.left = "50%";
-noBtn.style.top = "50%";
-noBtn.style.transform = "translate(-50%, -50%)";
+  // защита от null — это не «вежливость», а здравый смысл
+  if (!noBtn || !yesBtn) {
+    console.error("Кнопки не найдены");
+    return;
+  }
 
-noBtn.addEventListener("mouseenter", () => {
-  const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-  const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+  noBtn.style.position = "absolute";
 
-  noBtn.style.left = ${x}px;
-  noBtn.style.top = ${y}px;
-});
+  noBtn.addEventListener("mouseenter", () => {
+    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
 
-yesBtn.addEventListener("click", () => {
-  window.location.href = "yes.html";
+    noBtn.style.left = ${x}px;
+    noBtn.style.top = ${y}px;
+  });
+
+  yesBtn.addEventListener("click", () => {
+    window.location.href = "yes.html";
+  });
 });
