@@ -1,8 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const noBtn = document.getElementById("noBtn");
   const yesBtn = document.getElementById("yesBtn");
 
-  // защита от null — это не «вежливость», а здравый смысл
   if (!noBtn || !yesBtn) {
     console.error("Кнопки не найдены");
     return;
@@ -10,15 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   noBtn.style.position = "absolute";
 
-  noBtn.addEventListener("mouseenter", () => {
+  function moveButton() {
     const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
     const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
 
-    noBtn.style.left = ${x}px;
-    noBtn.style.top = ${y}px;
-  });
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+  }
 
-  yesBtn.addEventListener("click", () => {
+  noBtn.addEventListener("mouseenter", moveButton);
+  noBtn.addEventListener("touchstart", moveButton);
+
+  yesBtn.addEventListener("click", function () {
     window.location.href = "yes.html";
   });
 });
