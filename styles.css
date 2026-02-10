@@ -44,7 +44,7 @@ body {
     z-index: 1;
 }
 
-.heart, .bear {
+.heart, .smiley, .animal {
     position: absolute;
     font-size: 2rem;
     animation: float var(--float-duration) linear infinite;
