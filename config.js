@@ -22,7 +22,7 @@ const CONFIG = {
     // Questions and answers
     // Customize each question and its possible responses
     questions: {
-        text: "будешь ли ты моей Валентинкой? 🌹", // The big question!
+        text: "Будешь ли ты моей Валентинкой? 🌹", // The big question!
         yesBtn: "Да!",                                             // Text for "Yes" button
         noBtn: "Нет."                                                 // Text for "No" button
     },
