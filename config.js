@@ -29,7 +29,7 @@ const CONFIG = {
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Я самый счастливый человек на Земле! 🎉💝💖\nПриглашаю тебя в Барвиха Lounge 14 февраля в 20:00🥰\n Машинка заедет за тобой в 19:30❤️",
+        title: "Я самый счастливый человек на Земле! 🎉💝💖 Приглашаю тебя в Барвиха Lounge 14 февраля в 20:00🥰 Машинка заедет за тобой в 19:30❤️",
         message: "Я люблю тебя!",
         emojis: "💖💝💋❤️💕"  // These will bounce around
     },
