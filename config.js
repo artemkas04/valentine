@@ -5,31 +5,32 @@
 const CONFIG = {
     // Your Valentine's name that will appear in the title
     // Example: "Jade", "Sarah", "Mike"
-    valentineName: "Jade",
+    valentineName: "Дарьяночка",
 
     // The title that appears in the browser tab
     // You can use emojis! 💝 💖 💗 💓 💞 💕
-    pageTitle: "Will You Be My Valentine? 💝",
+    pageTitle: "💝 Валентинка 💝",
 
     // Floating emojis that appear in the background
     // Find more emojis at: https://emojipedia.org
     floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis
-        bears: ['🧸', '🐻']                       // Cute bear emojis
+        hearts: ['❤️', '💖', '💝', '💗', '💓', '💋', '💞', '💕'], 
+        smileys: ['😻', '🥰', '😍', '😚'],
+        animals: ['🧸', '🐻', '🐱']                      
     },
 
     // Questions and answers
     // Customize each question and its possible responses
     questions: {
-        text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-        yesBtn: "Yes!",                                             // Text for "Yes" button
-        noBtn: "No"                                                 // Text for "No" button
+        text: "Будешь ли ты моей Валентинкой? 🌹", // The big question!
+        yesBtn: "Да!",                                             // Text for "Yes" button
+        noBtn: "Нет."                                                 // Text for "No" button
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
+        title: "Урааа! Я самый счастливый человек на Земле! 🎉💝💖💝💓",
+        message: "Now come get your gift!",
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
