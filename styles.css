@@ -154,8 +154,6 @@ h2 {
 }
 
 .music-btn {
-    position: fixed;
-    z-index: 10;
     background: var(--primary-color);
     color: white;
     border: none;
