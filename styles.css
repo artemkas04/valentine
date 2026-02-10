@@ -80,12 +80,6 @@ body {
     display: none;
 }
 
-.disabled-btn {
-    opacity: 0.7;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
 @keyframes bounce {
     from {
         transform: scale(1);
