@@ -86,11 +86,20 @@ function createFloatingElements() {
         container.appendChild(div);
     });
 
-    // Create bears
-    config.floatingEmojis.bears.forEach(bear => {
+    // Create smileys
+    config.floatingEmojis.smileys.forEach(smiley => {
         const div = document.createElement('div');
-        div.className = 'bear';
-        div.innerHTML = bear;
+        div.className = 'smiley';
+        div.innerHTML = smiley;
+        setRandomPosition(div);
+        container.appendChild(div);
+    });
+
+    // Create animals
+    config.floatingEmojis.animals.forEach(animal => {
+        const div = document.createElement('div');
+        div.className = 'animal';
+        div.innerHTML = animal;
         setRandomPosition(div);
         container.appendChild(div);
     });
@@ -101,12 +110,6 @@ function setRandomPosition(element) {
     element.style.left = Math.random() * 100 + 'vw';
     element.style.animationDelay = Math.random() * 5 + 's';
     element.style.animationDuration = 10 + Math.random() * 20 + 's';
-}
-
-// Function to show next question
-function showNextQuestion(questionNumber) {
-    document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
-    document.getElementById(`question${questionNumber}`).classList.remove('hidden');
 }
 
 // Function to move the "No" button when clicked
