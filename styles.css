@@ -80,6 +80,12 @@ body {
     display: none;
 }
 
+.disabled-btn {
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 @keyframes bounce {
     from {
         transform: scale(1);
@@ -119,6 +125,15 @@ h1 {
 
 h2 {
     color: #ff8787;
+}
+
+.super-love {
+    font-size: 1.5em;
+    color: #ff4757;
+    font-weight: bold;
+    transform: scale(1.2);
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(255, 71, 87, 0.3);
 }
 
 .celebration-text {
