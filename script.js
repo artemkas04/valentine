@@ -125,6 +125,7 @@ function celebrate() {
     celebration.classList.remove('hidden');
     
     // Set celebration messages
+    document.getElementById('valentineTitle').textContent = `ЕС, ЕС, ЕС !!!`;
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
     document.getElementById('celebrationMessage').textContent = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
